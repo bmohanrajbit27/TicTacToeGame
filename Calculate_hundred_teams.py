@@ -1,4 +1,17 @@
+'''
+    Env : Python3
+    
+    Below program gives us the details of total hundreds scored by players of different ODI teams. Basically there are no website
+    that gives this detail and only way is to calculate manually by visiting each team stats page and its tedious process which 
+    might take more than 15 minutes and high chance of making mistakes in manual calculation.
+    
+    Basically this program visit each ODI team page and collect the number of players scored hundred for that team and calculate 
+    total number of hundreds scored by the team. After obtain the details of all the teams, data sorted out based on the 
+    total hundreds and printed as output..
+    
 
+
+'''
 
 import re, requests
 from urllib.request import urlopen
