@@ -10,7 +10,8 @@ After getting the player name, it will be randomly decided which player will be 
 
 Then input will be received from the player and the updated tic tac toe board will be printed on the screen on                            everytime the player given the location to place the marker.
 
-when a player successfuly placed 3 marks on horizontal|vertical|digonal line before the other player, then the 1st player will be declared winner and an option will be asked to play a rematch or a new match will be decided..
+when a player successfuly placed 3 marks on horizontal|vertical|digonal line before the other player, then the  player
+will be declared winner and an option will be asked to play a rematch or a new match will be decided..
                
 Based on the reply, a new match will be played or a rematch or the game will quit
 
