@@ -89,6 +89,7 @@ def check_winner(mark):
 
 # game_play function calls functions to get the input from the players and calls functions to determine the winners..
 def game_play(player1,player2):
+    print('Enter the location on the board, top of the board assigned 1-2-3, middle assigned 4-5-6, bottom assigned 7-8-9')
     for i in range(5):
         player1_func(player1)
         Result = check_winner('x')
