@@ -23,6 +23,7 @@ Algorithm
      return the team name, player count and total hundred value
 6. sort the list list_of_teams and print the output value..
 
+Run the script and have fun...
 
 '''
 
