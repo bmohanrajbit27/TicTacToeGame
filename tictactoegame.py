@@ -126,7 +126,6 @@ def main():
     
     while True:
         match = input('Type "N" for the new game and "R" for the rematch:')
-        
         if match.lower().startswith('n'):
             tic_tac = {'1':'' ,'2':'', '3':'', '4':'', '5':'', '6':'', '7':'', '8':'' ,'9':''}
             player1,player2 = who_gonna_play()
