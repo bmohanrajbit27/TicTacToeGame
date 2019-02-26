@@ -18,7 +18,7 @@ Based on the reply, a new match will be played or a rematch or the game will qui
 '''
 import random
 
-# Global tic_tac variable for the location of the board 
+# Global tic_tac variable for the location on the board 
 tic_tac= {'1':'','2':'','3':'','4':'','5':'','6':'','7':'','8':'','9':''}
 print('Empty tic tac board')
 
@@ -41,11 +41,12 @@ print_dict(tic_tac)
 # Getting the board position from player 1 and printing the updated tic tac toe board
 def player1_func(player1):
     while True:
-        player= input('{} turn:'.format(player1))
-        if player not in ['1','2','3','4','5','6','7','8','9']:
+        board_position= input('{} turn:'.format(player1))
+        if board_position not in ['1','2','3','4','5','6','7','8','9']:
+            print('please enter valid number- [1-9]')
             continue
-        if not tic_tac[player]:
-            tic_tac[player] = 'x'
+        if not tic_tac[board_position]:
+            tic_tac[board_position] = 'x'
         else:
             print('given place occupied please try again')
             continue
@@ -55,11 +56,12 @@ def player1_func(player1):
 # Getting the board position from player 2 and printing the updated tic tac toe board
 def player2_func(player2):
     while True:
-        player= input('{} turn: '.format(player2))
-        if player not in ['1','2','3','4','5','6','7','8','9']:
+        board_position= input('{} turn: '.format(player2))
+        if board_position not in ['1','2','3','4','5','6','7','8','9']:
+            print('please enter valid number- [1-9]')
             continue
-        if not tic_tac[player]:
-            tic_tac[player] = 'o'
+        if not tic_tac[board_position]:
+            tic_tac[board_position] = 'o'
         else:
             print('given place occupied please try again')
             continue
@@ -125,7 +127,7 @@ def main():
     game_play(player1,player2)
     
     while True:
-        match = input('Type "N" for the new game and "R" for the rematch:')
+        match = input('Type "N" for the new game -- "R" for the rematch -- "Any other key" for exit: ')
         if match.lower().startswith('n'):
             tic_tac = {'1':'' ,'2':'', '3':'', '4':'', '5':'', '6':'', '7':'', '8':'' ,'9':''}
             player1,player2 = who_gonna_play()
@@ -141,6 +143,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
-    
+    main()    
    
